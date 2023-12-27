@@ -96,7 +96,7 @@ func addIcon(out *coff.Coff, fname string, newid func() uint16) (io.Closer, erro
 		}
 		out.AddResource(coff.RT_GROUP_ICON, gid, group)
 		// TODO(akavel): reintroduce the Printlns in package main after Embed returns
-		// fmt.Println("Icon ", fname, " ID: ", id)
+		fmt.Println("Icon ", fname, " ID: ", id)
 	}
 
 	return f, nil
